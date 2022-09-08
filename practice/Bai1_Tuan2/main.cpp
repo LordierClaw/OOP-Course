@@ -101,7 +101,7 @@ int main() {
         switch (selection) {
         case 1:
             addNewEmployee();
-            //system("pause");
+            system("pause");
             break;
         case 2:
             findEmployee();
