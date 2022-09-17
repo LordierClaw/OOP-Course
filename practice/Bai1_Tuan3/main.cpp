@@ -53,17 +53,17 @@ void editWorkerInfor(Employee* worker) {
 	case 1:
 		cout << "Enter new Name: "; cin.ignore(); getline(cin, name);
 		worker->setName(name);
-		cout << worker->getId() << " | Name has been changed to " << name << endl;
+		cout << worker->getId() << " name has been changed to " << name << endl;
 		break;
 	case 2:
 		cout << "Enter new Number of products: "; cin >> numProduct;
 		((Worker*)worker)->setNumProduct(numProduct);
-		cout << worker->getId() << " | Number of products has been changed to " << numProduct << endl;
+		cout << worker->getId() << " number of products has been changed to " << numProduct << endl;
 		break;
 	case 3:
 		cout << "Enter new Price per product: "; cin >> priceProduct;
 		((Worker*)worker)->setPriceProduct(priceProduct);
-		cout << worker->getId() << " | Price per product has been changed to " << priceProduct << endl;
+		cout << worker->getId() << " price per product has been changed to " << priceProduct << endl;
 		break;
 	default:
 		cout << "Invalid input. ";
@@ -84,17 +84,17 @@ void editOfficerInfor(Employee* officer) {
 	case 1:
 		cout << "Enter new name: "; cin.ignore(); getline(cin, name);
 		officer->setName(name);
-		cout << officer->getId() << " | Name has been changed to " << name << endl;
+		cout << officer->getId() << " name has been changed to " << name << endl;
 		break;
 	case 2:
 		cout << "Enter new Salary rate: "; cin >> salaryRate;
 		((Officer*)officer)->setSalaryRate(salaryRate);
-		cout << officer->getId() << " | Salary rate has been changed to " << salaryRate << endl;
+		cout << officer->getId() << " salary rate has been changed to " << salaryRate << endl;
 		break;
 	case 3:
 		cout << "Enter new Working day: "; cin >> workDay;
 		((Officer*)officer)->setWorkDay(workDay);
-		cout << officer->getId() << " | Working day has been changed to " << workDay << endl;
+		cout << officer->getId() << " working day has been changed to " << workDay << endl;
 		break;
 	default:
 		cout << "Invalid input. ";

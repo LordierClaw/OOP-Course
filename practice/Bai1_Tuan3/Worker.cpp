@@ -31,9 +31,7 @@ long Worker::getSalary() {
 }
 
 string Worker::getInfor() {
-	string information = "";
-	information += "ID: " + this->id.toString() + '\n';
-	information += "Name: " + this->name + '\n';
+	string information = Employee::getInfor();
 	information += "Number of products: " + to_string(this->numProduct) + '\n';
 	information += "Price per product: " + to_string(this->priceProduct) + '\n';
 	information += "Salary: " + to_string(getSalary()) + '\n';

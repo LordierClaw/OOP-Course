@@ -6,6 +6,7 @@ Company::~Company() {
 	for (Employee* employee : this->employees) {
 		delete employee;
 	}
+	employees.clear();
 }
 
 void Company::addEmployee(Employee* employee) {
